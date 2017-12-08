@@ -62,3 +62,11 @@ sol:
 Raw string is not supported. Use <Text> Your String </Text>
 
 --------------------8--------------------------
+Unsupported top level event type toptouchstart dispatched
+
+sol: Define and export component
+--------------------9--------------------------
+The Component for route 'Home' must be a React component
+
+sol: Define and export component
+-----------------------------------------------

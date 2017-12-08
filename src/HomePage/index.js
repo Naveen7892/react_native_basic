@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import HomePage from './HomePageNavigator.js';
+import HomePageNavigator from './HomePageNavigator.js';
 import Sidebar from '../Sidebar/Sidebar.js';
 import { DrawerNavigator } from 'react-navigation';
 
 const HomePageRouter = DrawerNavigator(
     {
-        Home: {
+        HomeNavigator: {
             screen: HomePageNavigator
         }
     },

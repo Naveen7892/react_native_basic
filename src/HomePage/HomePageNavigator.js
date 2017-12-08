@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import {
     Button,
@@ -45,45 +45,47 @@ export default (HomePageNavigator = TabNavigator(
             screen: MailPage
         }
     },
-    tabBarPosition: "bottom",
-    tabBarComponent: props => {
-        return (
-            <Footer>
-                <FooterTab>
-                    <Button
-                        vertical
-                        active={props.navigationState.index === 0}
-                        onPress={() => props.navigation.navigate("Home")}
-                    >
-                        <Icon name="bowtie" />
-                        <Text>Lucy</Text>
-                    </Button>
-                    <Button
-                        vertical
-                        active={props.navigationState.index === 1}
-                        onPress={() => props.navigation.navigate("Search")}
-                    >
-                        <Icon name="briefcase" />
-                        <Text>Nine</Text>
-                    </Button>
-                    <Button
-                        vertical
-                        active={props.navigationState.index === 2}
-                        onPress={() => props.navigation.navigate("Notification")}
-                    >
-                        <Icon name="headset" />
-                        <Text>Jade</Text>
-                    </Button>
-                    <Button
-                        vertical
-                        active={props.navigationState.index === 3}
-                        onPress={() => props.navigation.navigate("Mail")}
-                    >
-                        <Icon name="headset" />
-                        <Text>Jade</Text>
-                    </Button>
-                </FooterTab>
-            </Footer>
-        )
-    }
+    {
+        tabBarPosition: "top",
+        tabBarComponent: props => {
+            return (
+                <Footer>
+                    <FooterTab>
+                        <Button
+                            vertical
+                            active={props.navigationState.index === 0}
+                            onPress={() => props.navigation.navigate("Home")}
+                        >
+                            <Icon name="bowtie" />
+                            {/* <Text>Home</Text> */}
+                        </Button>
+                        <Button
+                            vertical
+                            active={props.navigationState.index === 1}
+                            onPress={() => props.navigation.navigate("Search")}
+                        >
+                            <Icon name="briefcase" />
+                            {/* <Text>Search</Text> */}
+                        </Button>
+                        <Button
+                            vertical
+                            active={props.navigationState.index === 2}
+                            onPress={() => props.navigation.navigate("Notification")}
+                        >
+                            <Icon name="headset" />
+                            {/* <Text>Notification</Text> */}
+                        </Button>
+                        <Button
+                            vertical
+                            active={props.navigationState.index === 3}
+                            onPress={() => props.navigation.navigate("Mail")}
+                        >
+                            <Icon name="headset" />
+                            {/* <Text>Mail</Text> */}
+                        </Button>
+                    </FooterTab>
+                </Footer>
+            )
+        }
+    }   
 ))

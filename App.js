@@ -11,7 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
-import HomePage from './src/HomePage/index.js';
+import HomePageRouter from './src/HomePage/index.js';
 
 const instructions = Platform.select({
   ios: 'App running in iOS\n',
@@ -29,7 +29,7 @@ export default class App extends Component {
   }
 
   render() {
-    return <HomePage />;
+    return <HomePageRouter />;
     // return (
     //   <View>
     //     <Text> Hi </Text>

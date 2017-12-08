@@ -36,4 +36,7 @@ Packages: (wanted => installed)
 >> npm uninstall --save react-navigation
 >> npm install --save react-navigation@v1.0.0-beta.21
 
-========================6-==========================
+========================6-RELOAD APP ON REAL DEVICE FOR DEBUGGING==========================
+>> adb shell input keyevent 82
+
+========================7-==========================
