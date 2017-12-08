@@ -1,7 +1,64 @@
 --------------------1-------------------------
 Application <project name> has not been registered.
 
-sol: kill all node processes and restart.
+sol: Kill all node processes and restart.
 (in my case, i was running another test project already)
 
 --------------------2--------------------------
+>npm install native-base --save
+Error: EPERM: operation not permitted, rename 'D:\Testing\react_native_basic\node_modules\.staging\hoist-non-react-statics-5fa2fac6' -> 'D:\Testing\react_native_basic\node_modules\hoist-non-react-statics'
+    at Error (native)
+ { [Error: EPERM: operation not permitted, rename 'D:\Testing\react_native_basic\node_modules\.staging\hoist-non-react-statics-5fa2fac6' -> 'D:\Testing\react_native_basic\node_modules\hoist-non-react-statics']
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'rename',
+  path: 'D:\\Testing\\react_native_basic\\node_modules\\.staging\\hoist-non-react-statics-5fa2fac6',
+  dest: 'D:\\Testing\\react_native_basic\\node_modules\\hoist-non-react-statics',
+  parent: 'react_native_basic' }
+
+Please try running this command again as root/Administrator.
+
+sol: Run command with admin privileges.
+
+--------------------3--------------------------
+(In mobile app)
+Could not connect to developer server
+
+sol: (Re)start server again.
+>> react-native run-android
+
+--------------------4--------------------------
+(In mobile app)
+Invariant violation: Element type invalid: expected string or class/function but got: Object. You likely forgot to export your component from the file it's defined in.
+
+Check the render method of 'App'.
+
+sol: Define and export component
+--------------------5--------------------------
+(In node console)
+HomePage/index.js: Module does not exist in the module map
+Unable to resolve module react-navigation
+
+sol: (re)install react-navigation
+>> npm uninstall --save react-navigation
+>> npm install --save react-navigation@v1.0.0-beta.21
+--------------------6--------------------------
+Can't find variable: Component
+
+sol:
+check if any class that extends Component is not imported.
+eg 1:
+import React from 'react';
+class ... extends React.Component { ... }
+
+eg 2:
+import React, { Component } from 'react';
+class ... extends Component { ... }
+
+--------------------7--------------------------
+Cannot add a child that doesn't have a YogaNode to a parent without a measure function (trying to add a 'ReactRawTextShadowNode' to 'LayoutShadowNode')
+
+sol:
+Raw string is not supported. Use <Text> Your String </Text>
+
+--------------------8--------------------------

@@ -21,4 +21,13 @@ Packages: (wanted => installed)
 ========================3-GITHUB==========================
 >> git init
 
-====================================================
+========================4-INSTALL NATIVE BASE (UI COMPONENTS FOR REACT NATIVE)==========================
+>> npm install native-base --save
+
+>> react-native link
+
+========================5-(RE)INSTALL REACT-NAVIGATION (AFTER I GET ERROR)==========================
+>> npm uninstall --save react-navigation
+>> npm install --save react-navigation@v1.0.0-beta.21
+
+========================6-==========================
