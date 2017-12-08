@@ -1,0 +1,7 @@
+--------------------1-------------------------
+Application <project name> has not been registered.
+
+sol: kill all node processes and restart.
+(in my case, i was running another test project already)
+
+--------------------2--------------------------
