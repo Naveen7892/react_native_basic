@@ -20,6 +20,12 @@ Packages: (wanted => installed)
 
 ========================3-GITHUB==========================
 >> git init
+>> git status
+>> git commit -m "ReactNative - Initial commit"
+>> git log
+>> git branch
+>> git remote add origin https://github.com/Naveen7892/react_native_basic.git
+>> git push -u origin master
 
 ========================4-INSTALL NATIVE BASE (UI COMPONENTS FOR REACT NATIVE)==========================
 >> npm install native-base --save
