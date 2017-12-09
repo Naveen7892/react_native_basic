@@ -69,4 +69,12 @@ sol: Define and export component
 The Component for route 'Home' must be a React component
 
 sol: Define and export component
------------------------------------------------
+--------------------10--------------------------
+Adjacent JSX elements must be wrapped in an enclosing tag
+
+sol: Wrap the elements within Container, view, or other wrapper elements.
+--------------------11--------------------------
+Failed prop type: Invalid prop 'name' of value 'user' supplied to 'icon'\\
+
+sol: check with icon names (in mobile warning list) eg: arrow-back, person, menu, home, search, notifications, mail
+--------------------12--------------------------

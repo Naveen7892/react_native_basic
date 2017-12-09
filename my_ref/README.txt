@@ -38,5 +38,6 @@ Packages: (wanted => installed)
 
 ========================6-RELOAD APP ON REAL DEVICE FOR DEBUGGING==========================
 >> adb shell input keyevent 82
+(Opens options list in mobile)
 
 ========================7-==========================

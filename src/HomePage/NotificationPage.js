@@ -8,6 +8,7 @@ import {
 
 export default class NotificationPage extends React.Component {
     render() {
+        const { navigate } = this.props.navigation;
         return (
             <View>
                 <Text> Notification page </Text>

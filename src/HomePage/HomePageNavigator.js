@@ -8,6 +8,9 @@ import {
     Header,
     Left,
     Right,
+    Body,
+    Title,
+    Content,
     // HeaderTab
     Footer,
     FooterTab
@@ -48,43 +51,61 @@ export default (HomePageNavigator = TabNavigator(
     {
         tabBarPosition: "top",
         tabBarComponent: props => {
-            return (
-                <Footer>
-                    <FooterTab>
-                        <Button
-                            vertical
-                            active={props.navigationState.index === 0}
-                            onPress={() => props.navigation.navigate("Home")}
-                        >
-                            <Icon name="bowtie" />
-                            {/* <Text>Home</Text> */}
-                        </Button>
-                        <Button
-                            vertical
-                            active={props.navigationState.index === 1}
-                            onPress={() => props.navigation.navigate("Search")}
-                        >
-                            <Icon name="briefcase" />
-                            {/* <Text>Search</Text> */}
-                        </Button>
-                        <Button
-                            vertical
-                            active={props.navigationState.index === 2}
-                            onPress={() => props.navigation.navigate("Notification")}
-                        >
-                            <Icon name="headset" />
-                            {/* <Text>Notification</Text> */}
-                        </Button>
-                        <Button
-                            vertical
-                            active={props.navigationState.index === 3}
-                            onPress={() => props.navigation.navigate("Mail")}
-                        >
-                            <Icon name="headset" />
-                            {/* <Text>Mail</Text> */}
-                        </Button>
-                    </FooterTab>
-                </Footer>
+            return (                   
+                // <Container>
+                //     <Header>
+                //         <Left>
+                //             <Button transparent onPress={() => props.navigation.navigate("DrawerOpen")}>
+                //                 <Icon name="person" />
+                //             </Button>
+                //         </Left>
+                //         <Body>
+                //             <Title> Home </Title>
+                //         </Body>
+                //         <Right />
+                //     </Header> 
+
+                //     <Content padder>
+                //         <Text> Content </Text>
+                //     </Content>
+
+                    <Footer>
+                        <FooterTab>
+                            <Button
+                                vertical
+                                active={props.navigationState.index === 0}
+                                onPress={() => props.navigation.navigate("Home")}
+                            >
+                                <Icon name="home" />
+                                {/* <Text>Home</Text> */}
+                            </Button>
+                            <Button
+                                vertical
+                                active={props.navigationState.index === 1}
+                                onPress={() => props.navigation.navigate("Search")}
+                            >
+                                <Icon name="search" />
+                                {/* <Text>Search</Text> */}
+                            </Button>
+                            <Button
+                                vertical
+                                active={props.navigationState.index === 2}
+                                onPress={() => props.navigation.navigate("Notification")}
+                            >
+                                <Icon name="notifications" />
+                                {/* <Text>Notification</Text> */}
+                            </Button>
+                            <Button
+                                vertical
+                                active={props.navigationState.index === 3}
+                                onPress={() => props.navigation.navigate("Mail")}
+                            >
+                                <Icon name="mail" />
+                                {/* <Text>Mail</Text> */}
+                            </Button>
+                        </FooterTab>
+                    </Footer>
+                // </Container>
             )
         }
     }   
