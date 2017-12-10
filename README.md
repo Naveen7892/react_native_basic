@@ -26,7 +26,7 @@ ReactNative application to demo basic UI templates and Components.
 
 >> npm install 
 
-(if package exists)
+(Uninstall if package exists already, as that may cause errors at some point of time)
 >> npm uninstall --save react-navigation
 
 >> npm install --save react-navigation@v1.0.0-beta.21
@@ -63,5 +63,6 @@ Environment:
 Packages: (wanted => installed)
   react: 16.0.0 => 16.0.0
   react-native: 0.50.4 => 0.50.4
+```
 
 ******************************************************************************************************
