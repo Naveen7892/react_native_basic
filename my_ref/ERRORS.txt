@@ -93,5 +93,5 @@ sol:
 --------------------15--------------------------
 To remove underline under listitem
 
-underlineColorAndroid={"transparent"}
+	
 

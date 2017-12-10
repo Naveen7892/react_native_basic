@@ -1,40 +1,53 @@
+## Description
+
 ReactNative application to demo basic UI templates and Components.
 
-*********************************
-Steps to make the app work:
-*********************************
+##Steps to make the app work:
 
-==============
-Prerequisites:
-==============
-(Optional) >> nvm install 5.0.0
+**Prerequisites:**
+
+```Command Prompt
+(Optional) 
+>> nvm install 5.0.0
 
 >> npm install -g npm@4.6.1
 
 >> npm install -g yarn@1.3.2
 
 >> npm install -g react-native-cli@2.0.1
+```
 
-===============================
-Project installation procedure:
-===============================
+**Project installation procedure:**
 
+```Command Prompt
 >> git clone https://github.com/Naveen7892/react_native_basic.git
 
 >> cd react_native_basic
 
 >> npm install 
 
-(Optional)>> react-native upgrade
-(Optional)>> react-native link
+(if pakage exists)
+>> npm uninstall --save react-navigation
+
+>> npm install --save react-navigation@v1.0.0-beta.21
+
+>> npm install react-native-vector-icons --save
+
+>> react-native link react-native-vector-icons
+
+(Optional)
+>> react-native upgrade
+
+(Optional)
+>> react-native link
 
 (Run app in android device or emulator)
 >> react-native run-android
+```
 
-==============================
-Project and environment info:
-==============================
+**Project and environment info:**
 
+```Command Prompt
 ~/react_native_basic>react-native info
 Scanning folders for symlinks in ~\react_native_basic\node_modules (159ms)
 
@@ -51,4 +64,4 @@ Packages: (wanted => installed)
   react: 16.0.0 => 16.0.0
   react-native: 0.50.4 => 0.50.4
 
-*******************************************************************
+******************************************************************************************************
