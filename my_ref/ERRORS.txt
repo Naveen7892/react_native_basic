@@ -78,3 +78,20 @@ Failed prop type: Invalid prop 'name' of value 'user' supplied to 'icon'\\
 
 sol: check with icon names (in mobile warning list) eg: arrow-back, person, menu, home, search, notifications, mail
 --------------------12--------------------------
+Error while updating property 'padding' in shadow node of type: RCTText
+
+Sol: Use itemStyle
+--------------------13--------------------------
+Warning: Failed prop type: invalid prop 'name' of value '' supplied to icon
+
+Sol: provide correct icon name. Import Icon properly
+--------------------14--------------------------
+Error while updating property 'alignitems' in shadow node of type: RCTText
+
+sol:
+
+--------------------15--------------------------
+To remove underline under listitem
+
+underlineColorAndroid={"transparent"}
+

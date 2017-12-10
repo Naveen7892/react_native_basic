@@ -8,10 +8,31 @@ import {
     Item,
     Icon,
     Input,
-    Button
+    Button,
+    Left,
+    Right,
+    Body,
+    Title
 } from 'native-base';
 
 export default class SearchPage extends React.Component {
+
+    static navigationOptions = ({ navigation }) => ({
+        header: (
+          <Header>
+            <Left>
+              <Button transparent onPress={() => navigation.goBack()}>
+                <Icon name="arrow-back" />
+              </Button>
+            </Left>
+            <Body>
+              <Title>Menu</Title>
+            </Body>
+            <Right />
+          </Header>
+        )
+      });
+
     render() {
         const { navigate } = this.props.navigation;
         return (

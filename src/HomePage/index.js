@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import HomePageNavigator from './HomePageNavigator.js';
 import Sidebar from '../Sidebar/Sidebar.js';
-import { DrawerNavigator } from 'react-navigation';
+import SearchPage from './SearchPage.js';
+
+import { 
+    DrawerNavigator,
+    StackNavigator
+} from 'react-navigation';
 
 const HomePageRouter = DrawerNavigator(
     {
@@ -14,4 +19,19 @@ const HomePageRouter = DrawerNavigator(
     }
 );
 
-export default HomePageRouter;
+const StackRouter = StackNavigator({
+    HomeStack: {
+        screen: HomePageRouter
+        // navigationOptions: { title: 'Home Stack' }
+    },
+    // Search: {
+    //     screen: SearchPage
+    // }
+},
+    {
+        headerMode: "none"
+    }
+)
+
+// export default HomePageRouter;
+export default StackRouter;

@@ -21,7 +21,7 @@ export default class HomePage extends React.Component {
 
         return (
             <Container>
-                <Header>
+                <Header hasTabs>
                     <Left>
                         <Button transparent onPress={() => this.props.navigation.navigate("DrawerOpen")}>
                             <Icon name="person" />

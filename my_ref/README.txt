@@ -40,4 +40,11 @@ Packages: (wanted => installed)
 >> adb shell input keyevent 82
 (Opens options list in mobile)
 
-========================7-==========================
+========================7-INSTALL ICONS==========================
+>>npm install react-native-vector-icons --save
+>>react-native link react-native-vector-icons
+
+to use in code:
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+<Icon name="user-o" />
+========================8-==========================
