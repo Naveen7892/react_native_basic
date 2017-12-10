@@ -2,7 +2,7 @@
 
 ReactNative application to demo basic UI templates and Components.
 
-##Steps to make the app work:
+## Steps to make the app work:
 
 **Prerequisites:**
 
@@ -26,7 +26,7 @@ ReactNative application to demo basic UI templates and Components.
 
 >> npm install 
 
-(if pakage exists)
+(if package exists)
 >> npm uninstall --save react-navigation
 
 >> npm install --save react-navigation@v1.0.0-beta.21
