@@ -36,11 +36,23 @@ import MailPage from './MailPage.js';
 export default (HomePageNavigator = TabNavigator(
     {
         Home: {
-            screen: HomePage
+            screen: HomePage,
+            tabBarOptions: {
+                activeTintColor: 'blue',
+                style: {
+                    backgroundColor: 'transparent'
+                }
+            },
+            // navigationOption: ({navigation}) => ({
+            //     title: "New Home",
+            //     header: {
+            //         style: { backgroundColor: 'transparent' },
+            //     }
+            // })
         },
-        Search: {
-            screen: SearchPage
-        },
+        // Search: {
+        //     screen: SearchPage
+        // },
         Notification: {
             screen: NotificationPage
         },

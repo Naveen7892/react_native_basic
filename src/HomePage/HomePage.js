@@ -20,25 +20,23 @@ export default class HomePage extends React.Component {
         const { navigate } = this.props.navigation;
 
         return (
-            <Container>
-                <Header hasTabs>
+            <Container style={{backgroundColor: 'white'}} >
+                <Header hasTabs style={{ backgroundColor: "transparent"}}>
                     <Left>
                         <Button transparent onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-                            <Icon name="person" />
+                            <Icon name="person" style={{color: 'black'}} />
                         </Button>
                     </Left>
                     <Body>
-                        <Title> Home </Title>
+                        <Title style={{color: 'black'}} > Home </Title>
                     </Body>
                     <Right />
-                </Header> 
+                </Header>
 
                 <Content padder>
                     <Text> Home Page </Text>
                 </Content>
-
-
-            </Container> 
+            </Container>
         );
     }
 };

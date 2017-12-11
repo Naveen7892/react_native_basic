@@ -21,12 +21,12 @@ const HomePageRouter = DrawerNavigator(
 
 const StackRouter = StackNavigator({
     HomeStack: {
-        screen: HomePageRouter
+        screen: HomePageRouter,
         // navigationOptions: { title: 'Home Stack' }
     },
-    // Search: {
-    //     screen: SearchPage
-    // }
+    Search: {
+        screen: SearchPage
+    }
 },
     {
         headerMode: "none"

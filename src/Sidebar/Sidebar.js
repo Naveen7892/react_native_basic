@@ -11,7 +11,8 @@ import {
     Right,
     Body,
     Footer,
-    FooterTab
+    FooterTab,
+    Button
 } from 'native-base';
 import { Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -154,8 +155,8 @@ export default class Sidebar extends React.Component {
                     </ListItem>
                 </Footer> */}
 
-                <Footer transparent>
-                    <FooterTab>
+                {/* <Footer transparent>
+                    <FooterTab transparent>
                             
                         <Icon.Button name="moon-o" transparent>
                         </Icon.Button>
@@ -164,26 +165,23 @@ export default class Sidebar extends React.Component {
                         </Icon.Button>
                     
                     </FooterTab>
+                </Footer> */}
+
+                <Footer style={{backgroundColor: 'transparent'}}>
+                    <Left>
+                        <Button transparent style={{paddingLeft: 10}}>
+                            <Icon name='moon-o' size={24} />
+                        </Button>
+                    </Left>
+                    <Body>
+                        <Text> </Text>
+                    </Body>
+                    <Right>
+                        <Button transparent style={{paddingRight: 10}}>
+                            <Icon name='qrcode' size={24} />
+                        </Button>
+                    </Right>
                 </Footer>
-
-
-
-
-                    {/* <Footer>
-                        <Left>
-                            <Button transparent>
-                                <Icon name='moon-o' />
-                            </Button>
-                        </Left>
-                        <Body>
-                            <Text>Footer</Text>
-                        </Body>
-                        <Right>
-                            <Button transparent>
-                                <Icon name='qrcode' />
-                            </Button>
-                        </Right>
-                    </Footer> */}
                 
             </Container>
         );
