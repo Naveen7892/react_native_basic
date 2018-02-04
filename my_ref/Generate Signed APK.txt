@@ -1,0 +1,25 @@
+>>keytool -genkey -v -keystore my-twitter-task-release-key.keystore -alias my-twitter-task-key-alias -keyalg RSA -keysize 2048 -validity 10000
+Enter keystore password:
+Re-enter new password:
+What is your first and last name?
+  [Unknown]:  Naveen Kumar
+What is the name of your organizational unit?
+  [Unknown]:  Mobile development
+What is the name of your organization?
+  [Unknown]:  Hasura
+What is the name of your City or Locality?
+  [Unknown]:  Chennai
+What is the name of your State or Province?
+  [Unknown]:  Tamil Nadu
+What is the two-letter country code for this unit?
+  [Unknown]:  IN
+Is CN=Naveen Kumar, OU=Mobile development, O=Hasura, L=Chennai, ST=Tamil Nadu, C=IN correct?
+  [no]:  yes
+
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+        for: CN=Naveen Kumar, OU=Mobile development, O=Hasura, L=Chennai, ST=Tamil Nadu, C=IN
+Enter key password for <my-twitter-task-key-alias>
+        (RETURN if same as keystore password):
+[Storing my-twitter-task-release-key.keystore]
+
+=========================================================
