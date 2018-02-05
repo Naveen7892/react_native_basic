@@ -95,3 +95,13 @@ To remove underline under listitem
 
 --------------------16--------------------------
 Error whilte updating propert 'height' in shadow node of type: RCTView
+
+--------------------17--------------------------
+FAILURE: Build failed with an exception.
+
+SOL:
+Go to your build.gradle file in [your project name]\android\app and under "dependencies", change the 'com.android.support:appcompat-v7:23.0.1' dependency to 23.0.0.
+
+https://github.com/facebook/react-native/issues/3770
+
+--------------------18--------------------------
